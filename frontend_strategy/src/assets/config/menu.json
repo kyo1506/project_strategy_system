@@ -1,0 +1,118 @@
+[
+	{
+		"name": "Administração ",
+		"id": "7",
+		"icon": "how_to_reg",
+		"route": "administracao",
+		"children": [
+			{
+				"name": "Gerenciar Usuários",
+				"id": "?",
+				"icon": "group",
+				"route": "usuarios",
+				"children": []
+			}
+		]
+	},
+	{
+		"name": "Configurações ",
+		"id": "4",
+		"icon": "settings",
+		"route": "configuracao",
+		"children": [
+			{
+				"name": "Documentos",
+				"id": "?",
+				"icon": "insert_drive_file",
+				"route": "documento",
+				"children": []
+			},
+			{
+				"name": "Documentos Campos",
+				"id": "?",
+				"icon": "insert_drive_file",
+				"route": "documento-campo",
+				"children": []
+			}
+		]
+	},
+	{
+		"name": "Relatórios Gerais",
+		"id": "3",
+		"icon": "visibility",
+		"route": "operacao",
+		"children": [
+			{
+				"name": "Relatório Geral",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-geral",
+				"children": []
+			},
+			{
+				"name": "Relatório Produtividade - Sintético",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-produtividade-sintetico",
+				"children": []
+			},
+			{
+				"name": "Relatório Produtividade - Analitico",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-produtividade-analitico",
+				"children": []
+			},
+			{
+				"name": "Relatório Campos Editados",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-campo-editado",
+				"children": []
+			}
+		]
+	},
+	{
+		"name": "Indicadores BI",
+		"id": "5",
+		"icon": "visibility",
+		"route": "operacao-bi",
+		"children": [
+			{
+				"name": "Indicador Monitoria Histórico",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-monitoria-historico",
+				"children": []
+			},
+			{
+				"name": "Indicador Monitoria Realtime",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-monitoria-realtime",
+				"children": []
+			},
+			{
+				"name": "Indicador Assertividade Histórico",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-assertividade-historico",
+				"children": []
+			},
+			{
+				"name": "Indicador Assertividade Realtime",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-assertividade-realtime",
+				"children": []
+			},
+			{
+				"name": "Esteira Diária",
+				"id": "?",
+				"icon": "bar_chart",
+				"route": "relatorio-diario-bpo",
+				"children": []
+			}
+		]
+	}
+]

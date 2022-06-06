@@ -1,0 +1,56 @@
+.containerPages {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+.example-sidenav {
+	width: 300px;
+}
+
+.mat-drawer-container {
+	position: fixed;
+	top: 36px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	display: block;
+	overflow: hidden;
+}
+
+.mat-drawer.mat-drawer-side {
+	z-index: 2;
+	background-color: #e9ecef;
+}
+
+.mat-drawer.mat-drawer-side {
+	z-index: 2;
+}
+
+.mat-drawer-side {
+	border-right: solid 0px !important;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+	position: fixed;
+	display: inherit;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	padding: 0px;
+	height: 36px;
+	background-color: var(--petroleoum-blue);
+	color: var(--light-grey);
+	box-shadow: 0 4px 4px -2px #989898;
+	-moz-box-shadow: 0 4px 4px -2px #989898;
+	-webkit-box-shadow: 0 4px 4px -2px #989898;
+	z-index: 4;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}

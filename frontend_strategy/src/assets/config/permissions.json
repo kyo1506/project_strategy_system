@@ -1,0 +1,90 @@
+[
+	{
+		"route": "initial",
+		"roles": ["Master", "Gerente", "Supervisor"],
+		"children": [
+			{
+				"route": "resultado-ocr",
+				"roles": ["Master", "Supervisor", "Gerente", "Analista"]
+			}
+		]
+	},
+	{
+		"route": "administracao",
+		"roles": ["Master", "Gerente", "Supervisor"],
+		"children": [
+			{
+				"route": "usuarios",
+				"roles": ["Master", "Gerente", "Supervisor"]
+			},
+			{ "route": "home", "roles": ["Master", "Supervisor", "Analista"] }
+		]
+	},
+	{
+		"route": "configuracao",
+		"roles": ["Master", "Gerente", "Supervisor"],
+		"children": [
+			{
+				"route": "documento",
+				"roles": ["Master", "Gerente", "Supervisor"]
+			},
+			{
+				"route": "documento-campo",
+				"roles": ["Master", "Gerente", "Supervisor"]
+			},
+			{
+				"route": "documento-novo",
+				"roles": ["Master", "Gerente", "Supervisor"]
+			}
+		]
+	},
+	{
+		"route": "operacao",
+		"roles": ["Master", "Gerente", "Supervisor", "Cliente", "Analista"],
+		"children": [
+			{
+				"route": "relatorio-geral",
+				"roles": ["Master", "Supervisor", "Analista"]
+			},
+
+			{
+				"route": "relatorio-produtividade-sintetico",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-produtividade-analitico",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-campo-editado",
+				"roles": ["Master", "Supervisor"]
+			}
+		]
+	},
+	{
+		"route": "operacao-bi",
+		"roles": ["Master", "Gerente", "Supervisor"],
+		"children": [
+			{
+				"route": "relatorio-monitoria-historico",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-monitoria-realtime",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-assertividade-historico",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-assertividade-realtime",
+				"roles": ["Master", "Supervisor"]
+			},
+			{
+				"route": "relatorio-diario-bpo",
+				"roles": ["Master", "Supervisor"]
+			}
+		]
+	}
+]

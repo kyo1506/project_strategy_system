@@ -1,0 +1,21 @@
+<ng-container >
+  <mat-toolbar *ngIf="autenticationService.$loggedSubject.value">
+      <div class="row align-items-center col-12">
+          <div class=" col-9 d-flex align-items-center pl-10">
+              <i class="material-icons cursor-pointer" (click)="toggle()">menu</i>
+              <img src="/assets/images/logo-vivo.svg" class="logotipo" style="width: 75px;padding-left: 10px;"/> 
+          </div>
+          <div class="col-3 d-none d-sm-block text-right">
+              <app-header></app-header>
+          </div>
+      </div>
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize >
+      <mat-drawer opened="{{opened}}" #drawer class="example-sidenav" mode="side" *ngIf="autenticationService.$loggedSubject.value">
+          <app-menu></app-menu>
+      </mat-drawer>
+      <div class="example-sidenav-content">
+          <router-outlet></router-outlet>
+      </div>
+  </mat-drawer-container>
+</ng-container>
